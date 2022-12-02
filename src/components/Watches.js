@@ -21,7 +21,7 @@ function Watches() {
     };
 
     const validateValue = () => {
-        if (data.name.trim().length && (Number(data.timeZone) > 0) && (Number(data.timeZone) <= 12)) {
+        if (data.name.trim().length && (Number(data.timeZone) > -11) && (Number(data.timeZone) <= 12)) {
             return data;
         } else {
             alert("Введите корректный часовой пояс!!!");
